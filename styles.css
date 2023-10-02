@@ -258,6 +258,89 @@ margin-bottom: 15px;
 .product_card {
     margin-right: 10px;
 }
+.menu__desktop {
+    display: flex;
+    align-items: center;
+    width: 110px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 10px;
+    margin-left: 20px;
+    
+    
+}
+.menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.menu__item {
+    text-align: center;
+    
+    
+}
+.menu__desktop:nth-child(1),
+.menu__desktop:nth-child(2) {
+    font-weight: bold;
+}
+
+.menu__item:last-child{
+    
+    padding-top: 20px;
+    
+}
+.menu__item:last-child a {
+   color: var(--hospital-green);
+   font-size: var(--sm);
+}
+.menu__item a {
+display: inline-block;
+color: #000000;
+text-decoration: none;
+margin-bottom: 20px;
+
+}
+.menu_mobile {
+   
+    padding: 24px;
+    
+    width: 250px;
+}
+
+.menu_mobile a {
+
+   text-decoration: none;
+   color: var(--black);
+   font-weight: bold;
+  
+}
+
+.menu__list--mobile {
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+ }
+ .menu__list--mobile:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+   }
+ .menu__list--mobile:nth-child(3) {
+   
+    bottom: 0;
+   }
+ .menu__item--mobile {
+    margin-bottom: 24px;
+ }
+ .menu__item--mobile .email {
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+    font-weight: 300 !important;
+ }
+ .sign-out {
+    color: var(--hospital-green) !important;
+    font-size: var(--sm);
+ }
 @media (max-width: 640px) {
     .login__logo {
         display: block;
@@ -278,18 +361,22 @@ margin-bottom: 15px;
         transform: translate(-50%, 0);
         width: 300px;
     }
+ 
+
+
+    
     }
     @media (max-width: 640px) {
-        .cards_container {
+    .cards_container {
             
-            grid-template-columns: repeat(auto-fill, 140px);  
-        }
-        .product_card {
-            width: 140px;
-        } 
-        .product_card img {
-            width: 140px;
-            height: 140px;
-           
-        }
+        grid-template-columns: repeat(auto-fill, 140px);  
     }
+    .product_card {
+        width: 140px;
+    } 
+    .product_card img {
+        width: 140px;
+        height: 140px;
+       
+    }
+}
